@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTune-Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="workout-page">
+    <header>
+        <nav class="navbar">
+            <h1>BioTune</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="workout">
+        <h2>Your Workout Plan</h2>
+        <div class="workout-container">
+            <div class="exercise">
+                <h3>Push-ups</h3>
+                <p>3 sets of 15 reps</p>
+            </div>
+            <div class="exercise">
+                <h3>Squats</h3>
+                <p>3 sets of 20 reps</p>
+            </div>
+            <div class="exercise">
+                <h3>Plank</h3>
+                <p>Hold for 60 seconds</p>
+            </div>
+        </div>
+    </main>
+    <h2>Workout Plan</h2>
+    <label for="category">Select Workout Level:</label>
+    <select id="category">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+    </select>
+    <div id="workout-container">
+        <!-- Exercises will be loaded here -->
+    </div>
+    <h3>Workout Timer</h3>
+    <p id="timer">00:00</p>
+    <button id="start-timer">Start</button>
+    <button id="reset-timer">Reset</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

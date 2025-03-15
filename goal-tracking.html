@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="goal-tracking-page">
+    <div class="goal-container">
+        <h2>Set Your Fitness Goal</h2>
+        <form id="goal-form">
+            <input type="text" id="goal" placeholder="Enter your goal (e.g., Lose 5kg in 2 months)" required>
+            <button type="submit">Save Goal</button>
+        </form>
+
+        <h3>My Goal:</h3>
+        <p id="saved-goal">No goal set yet.</p>
+        <button onclick="clearGoal()">Clear Goal</button>
+    </div>
+    <h2>Goal Tracking</h2>
+    <form id="goal-form">
+        <label>Set Your Goal:</label>
+        <input type="number" id="goal-weight" placeholder="Target Weight (kg)" required>
+        <label>Current Weight:</label>
+        <input type="number" id="current-weight" placeholder="Your Current Weight (kg)" required>
+        <button type="submit">Save Goal</button>
+    </form>
+    <h3>Progress</h3>
+    <div class="progress-bar">
+        <div id="progress" class="progress-fill">0%</div>
+    </div>
+    <p id="goal-message"></p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

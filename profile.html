@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTune-Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="profile-page">
+    <header>
+        <nav class="navbar">
+            <h1>BioTune</h1>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="workout.html">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile">
+        <h2>User Profile</h2>
+        <div class="profile-card">
+            <h3 id="user-name">Vidhi Gupta</h3>
+            <p>Email: <span id="user-email">vidhigupta123@gmail.com</span></p>
+            <p>Age: <span id="user-age">22</span></p>
+            <p>Weight: <span id="user-weight">50kg</span></p>
+        </div>
+        <h2>Edit Profile</h2>
+        <form id="profile-form">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            <label>Email:</label>
+            <input type="text" id="email" required> <!-- Email editable nh hoga-->
+            <label>Weight(Kg):</label>
+            <input type="number" id="weight" required>
+            <label>Age:</label>
+            <input type="number" id="age" required>
+            <label>Goal:</label>
+            <input type="text" id="goal" required>
+            <button type="submit">Save Changes</button>
+        </form>
+        <p id="message"></p>
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
